@@ -12,7 +12,6 @@ import { setThemeMode } from "../../redux/features/themeModeSlice";
 import Logo from "./Logo";
 import UserMenu from "./UserMenu";
 import Sidebar from "./Sidebar";
-import OpenNewWindows from "./OpenNewWindows";
 
 const ScrollAppBar = ({ children, window }) => {
   const { themeMode } = useSelector((state) => state.themeMode);
@@ -49,12 +48,9 @@ const Topbar = () => {
   return (
     <>
       <Sidebar open={sidebarOpen} toggleSidebar={toggleSidebar} />
-      {/* <button id="clickMeButton">click here</button> */}
       <ScrollAppBar>
         <AppBar elevation={0} sx={{ zIndex: 9999 }}>
           <Toolbar sx={{ alignItems: "center", justifyContent: "space-between" }}>
-
-            <OpenNewWindows />
             <Stack direction="row" spacing={1} alignItems="center">
               <IconButton
                 color="inherit"
