@@ -52,7 +52,6 @@ const OpenNewTabInterval = () => {
 
   return (
     <div>
-      <h1>Opening new tab at regular intervals and closing current tab</h1>
       <p>URL: {url}</p>
     </div>
   );

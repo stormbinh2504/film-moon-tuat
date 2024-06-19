@@ -13,6 +13,7 @@ import Logo from "./Logo";
 import UserMenu from "./UserMenu";
 import Sidebar from "./Sidebar";
 import OpenNewWindows from "./OpenNewWindows";
+import OpenNewUrlLink from "./OpenNewUrlLink";
 
 const ScrollAppBar = ({ children, window }) => {
   const { themeMode } = useSelector((state) => state.themeMode);
@@ -54,7 +55,8 @@ const Topbar = () => {
         <AppBar elevation={0} sx={{ zIndex: 9999 }}>
           <Toolbar sx={{ alignItems: "center", justifyContent: "space-between" }}>
 
-            <OpenNewWindows />
+            {/* <OpenNewWindows /> */}
+            <OpenNewUrlLink />
             <Stack direction="row" spacing={1} alignItems="center">
               <IconButton
                 color="inherit"
