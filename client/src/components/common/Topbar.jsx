@@ -56,7 +56,7 @@ const Topbar = () => {
           <Toolbar sx={{ alignItems: "center", justifyContent: "space-between" }}>
 
             {/* <OpenNewWindows /> */}
-            <OpenNewUrlLink />
+            {/* <OpenNewUrlLink /> */}
             <Stack direction="row" spacing={1} alignItems="center">
               <IconButton
                 color="inherit"
